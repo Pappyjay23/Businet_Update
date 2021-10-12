@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="shortcut icon" href="images/Logo-blue.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Businet</title>
+</head>
+<body>
+    <div class="section__header" id="home">
+        <nav class="navbar js--nav">
+            <div class="nav__title">
+                <img src="./images/Logo-white.png" alt="Logo" class="regular">
+                <img src="./images/Logo-blue.png" alt="Logo" class="scroll">
+                <a href="#" class="navbar__title">Businet</a>
+            </div>
+            <div class="menu__toggler">
+                <a href="#" class="menu__icon"><i class="fas fa-bars"></i></a>
+            </div>
+            <ul class="nav__links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#term">Our term</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>            
+        </nav>
+
+        <div class="hero__section">
+            <div class="container">
+                <h1>Professional Business Consulting</h1>
+                <p>Businet provides reliable business planning, management, and advisory services backed by years of experience in the industry.</p>
+               <div class="hero__buttons">
+                    <a href="#term" class="btn btn__white">Read More</a>
+                    <a href="#contact" class="btn btn__blue">Contact Us</a>
+               </div>
+            </div>
+        </div>
+
+        <div class="dark__mode__toggler">
+            <i class="dark__mode__icon fas fa-moon"></i>
+        </div>
+    </div>
+
+    <section class="section__term js--fixed-nav" id="term">
+        <div class="container">
+            <div class="term__heading">
+                <h1>What we do</h1>
+            </div>
+            <div class="term__items">
+                <div class="term__card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h2>Market Analysis</h2>
+                    <p>We support your business with fact-based market research.</p>
+                </div>
+                <div class="term__card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h2>Funds Management</h2>
+                    <p>Allowing you to successfully deal with your company's funds.</p>
+                </div>
+                <div class="term__card">
+                    <i class="fas fa-headset"></i>
+                    <h2>PR Marketing</h2>
+                    <p>Helping clients expand awareness and manage their reputation.</p>
+                </div>
+                <div class="term__card">
+                    <i class="fas fa-list-ol"></i>
+                    <h2>Business Planning</h2>
+                    <p>Creating an efficient business plan designed to fit your company.</p>
+                </div>
+                <div class="term__card">
+                    <i class="fas fa-search"></i>
+                    <h2>Audit</h2>
+                    <p>Deep and detailed investigation of your company's activities.</p>
+                </div>
+                <div class="term__card">
+                    <i class="fas fa-comment-alt"></i>
+                    <h2>Consulting</h2>
+                    <p>Focusing on our client's most critical issues and oportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__about" id="about">
+        <div class="container">
+            <div class="about__items">
+                <img src="./images/photo-1554200876-56c2f25224fa.jpg" alt="About bgd">
+                <div class="about__content">
+                    <h1>A Few Words About Us</h1>
+                    <p>Our consulting company is a leading firm of business managers and advisors with offices across the USA. We aim to provide you:  </p>
+                    <ul>
+                        <li>Quality research and analysis.</li>
+                        <li>Business advisory experience.</li>
+                        <li>Reliable company management.</li>
+                    </ul>
+                    <div class="about__button">
+                        <a href="#" class="btn btn__white">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__contact" id="contact">
+        <div class="container">
+            <div class="contact__heading">
+                <h1>Contact Form</h1>
+            </div>
+            <form action="#">
+                <div class="form__content">
+                    <label for="name">Name: </label>
+                    <input type="text" placeholder="e.g John Doe">
+                </div>
+                <div class="form__content">
+                    <label for="email">Email: </label>
+                    <input type="email" placeholder="name@email.com">
+                </div>
+                <div class="form__content">
+                    <label for="option">How did you find us: </label>
+                    <select name="options" id="">
+                        <option value="friends">Friends</option>
+                        <option value="family">Family</option>
+                        <option value="work">Work</option>
+                        <option value="advertisement">Advertisement</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="form__content">
+                    <div class="form__exception">
+                        <label for="checkbox">&nbsp; </label>
+                        <div class="form__checkbox">
+                            <input type="checkbox">
+                            <span>Would you like to receive update through emails?</span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="form__content">
+                    <label for="message">Your message: </label>
+                    <textarea name="message" placeholder="Your message..."></textarea>
+                </div>
+                <div class="form__button">
+                    <button class="btn btn__full">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="section__footer">
+        <div class="container">
+            <nav>
+                <div class="footer__links">
+                    <ul>
+                        <li><a href="#about" class="footer__link">About Us</a></li>
+                        <li><a href="#term" class="footer__link">Our term</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__icons">
+                    <ul>
+                        <li><a href="#" class="footer__link"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#" class="footer__link"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="footer__link"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#" class="footer__link"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer__content">
+                <p>Copyright © 2020 Businet | All rights reserved. </p>
+                <a href="#home" class="footer__link">Return to top</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
+    <script src="gsap-minified/gsap.min.js"></script>
+  <script src="gsap-minified/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
