@@ -32,7 +32,7 @@ $(".js--fixed-nav").waypoint(function (direction) {
 })
 
 // Linking buttons and links
-$('a[href*="#"]').on('click', function (e) {
+$("a[href*='#']").on('click', function (e) {
     e.preventDefault()
   
     $('html, body').animate(
@@ -48,78 +48,26 @@ $('a[href*="#"]').on('click', function (e) {
 var menu = document.querySelector(".menu__toggler")
 var menu__icon = document.querySelector(".menu__icon i")
 var nav__link = document.querySelector(".nav__links")
+var navLink = document.querySelectorAll(".nav-link")
 
 menu.addEventListener("click", ()=>{
     if (menu__icon.classList.contains("fa-bars")){
         menu__icon.classList.add("fa-times")
         menu__icon.classList.remove("fa-bars")
         nav__link.classList.add("active")
-    }else {
+    }else if(menu__icon.classList.contains("fa-times")){     
         menu__icon.classList.add("fa-bars")
         menu__icon.classList.remove("fa-times")
         nav__link.classList.remove("active")
     }
 })
 
-
-// GSAP Animations
-gsap.registerPlugin(ScrollTrigger)
-
-gsap.from(".animate-hero", {
-    duration: 0.6,
-    opacity: 0,
-    y: -150,
-    stagger: 0.3,
-    delay: 0.2
-});
-
-gsap.from(".animate-services", {
-    scrollTrigger: ".animate-services",
-    duration: 0.5,
-    opacity: 1,
-    x: -150,
-    stagger: 0.12
-});
-
-gsap.from(".animate-img", {
-    scrollTrigger: ".animate-services",
-    duration: 1.2,
-    opacity: 0,
-    x: -200
-});
-
-gsap.from(".animate-membership", {
-    scrollTrigger: ".animate-membership",
-    duration: 1,
-    opacity: 0,
-    y: -150,
-    stagger: 0.3,
-    delay: 0.5
-});
-
-gsap.from(".animate-card", {
-    scrollTrigger: ".animate-card",
-    duration: 1,
-    opacity: 0,
-    y: -150,
-    stagger: 0.1,
-    delay: 0.2
-});
-
-gsap.from(".animate-team", {
-    scrollTrigger: ".animate-team",
-    duration: 1,
-    opacity: 0,
-    y: -150,
-    stagger: 0.3,
-    delay: 0.2
-});
-
-gsap.from(".animate-email", {
-    scrollTrigger: ".animate-email",
-    duration: 0.8,
-    opacity: 0,
-    y: -150,
-    stagger: 0.25,
-    delay: 0.3
-});
+for (let i = 0; i < navLink.length; i++) {
+    navLink[i].addEventListener('click', ()=>{
+        if(menu__icon.classList.contains("fa-times")){
+            menu__icon.classList.add("fa-bars")
+            menu__icon.classList.remove("fa-times")
+            nav__link.classList.remove("active")
+        }
+    }) 
+}   
