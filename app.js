@@ -46,7 +46,8 @@ $("a[href*='#']").on('click', function (e) {
 
 // Mobile Menu
 var menu = document.querySelector(".menu__toggler")
-var menu__icon = document.querySelector(".menu__icon i")
+var menu__icon = document.querySelector(".menu__icon i")cls
+
 var nav__link = document.querySelector(".nav__links")
 var navLink = document.querySelectorAll(".nav-link")
 
